@@ -49,11 +49,11 @@ window.fbAsyncInit = function(){
 	console.log('登入啦啦啦!');
 	// 2. 以 FB.api 拿到使用者的 group 列表
 	FB.api('/me/groups',function(resp){
-	console.log('USER GROUPS:',resp.data);
-	var i;
-	for(i=0;i<resp.data.length;i+=1){
-	 group = resp.data[i];
-	 if(junkGroups.indexOf(group.id)!==-1){
+	 console.log('USER GROUPS:',resp.data);
+	 var i;
+	 for(i=0;i<resp.data.length;i+=1){
+	  group = resp.data[i];
+	  if(junkGroups.indexOf(group.id)!==-1){
 	    results.append('<tr><td>'+group.id+'</td><td>'+group.name+'</td></tr>');
 	 }
 	}
