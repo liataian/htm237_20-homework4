@@ -6,7 +6,7 @@ var startButton = $('.hw4-start-button'), // 「開始掃描」按鈕
 // 垃圾社團列表
 var junkGroups = [];
 
-$getJSON('',{},function(data){
+$getJSON('http://jsbin.com/jaziroja/1',{},function(data){
      // 將每筆資料的 GID 放進 junkGroups 陣列中。
     //
     // ...
