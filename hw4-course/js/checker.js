@@ -54,7 +54,7 @@ window.fbAsyncInit = function(){
 	for(i=0;i<resp.data.length;i+=1){
 	 group = resp.data[i];
 	 if(junkGroups.indexOf(group.id)!==-1){
-	    results.append('<tr><td>'+group.id+'</td><td>'+group.name+'</td></tr>')
+	    results.append('<tr><td>'+group.id+'</td><td>'+group.name+'</td></tr>');
 	 }
 	}
 	
@@ -62,6 +62,5 @@ window.fbAsyncInit = function(){
 	results.after('<div class="hw4-complete alert alert-info">掃描完成</div>');
 	});	
 	},{scope:'user_groups'});
-
   });
 };
